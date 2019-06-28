@@ -2,12 +2,7 @@
 
 This project is about labeling satellite images chips with various atmospheric conditions and rare land cover/land use phenomena. This images are segments of a larger image of the Amazon Rainforest
 
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
+## Prerequisites
 
 Data source and description
 The dataset contains the list of labels and satellite images. Images have four bands of data: red, green, blue, and near infrared
@@ -20,11 +15,10 @@ Data list:
 ```
 Give examples
 ```
+## Data Description
 
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+- Each image can have multiple labels
+- There are 17 possible tags: agriculture, artisinal_mine, bare_ground, blooming, blow_down, clear, cloudy, conventional_mine, cultivation, habitation, haze, partly_cloudy, primary, road, selective_logging, slash_burn, water
 
 ## Authors
 
