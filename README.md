@@ -1,4 +1,4 @@
-# Project Title
+# Multi-label Classification for satellite imagery
 
 This project is about labeling satellite images chips with various atmospheric conditions and rare land cover/land use phenomena. This images are segments of a larger image of the Amazon Rainforest
 
