@@ -18,7 +18,3 @@ Give examples
 
 - Each image can have multiple labels
 - There are 17 possible tags: agriculture, artisinal_mine, bare_ground, blooming, blow_down, clear, cloudy, conventional_mine, cultivation, habitation, haze, partly_cloudy, primary, road, selective_logging, slash_burn, water
-
-## Authors
-
-* **Brunilda S.**
