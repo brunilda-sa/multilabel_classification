@@ -2,9 +2,8 @@
 
 This project is about labeling satellite images chips with various atmospheric conditions and rare land cover/land use phenomena. This images are segments of a larger image of the Amazon Rainforest
 
-## Prerequisites
+## Data source and description
 
-Data source and description
 The dataset contains the list of labels and satellite images. Images have four bands of data: red, green, blue, and near infrared
 The data comes from Planet (https://www.planet.com/) and its Brazilian partner SCCON (https://www.sccon.com.br/)
 Data list:
@@ -22,4 +21,4 @@ Give examples
 
 ## Authors
 
-* **Brunilda S.** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Brunilda S.**
