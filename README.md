@@ -19,10 +19,10 @@ Give examples
 - Each image can have multiple labels
 - There are 17 possible tags: agriculture, artisinal_mine, bare_ground, blooming, blow_down, clear, cloudy, conventional_mine, cultivation, habitation, haze, partly_cloudy, primary, road, selective_logging, slash_burn, water
 
-# What is a Multi-Label Classification
+## What is a Multi-Label Classification
 TBD
 
-# Expected Challenges
+## Expected Challenges
 Large Dataset
 The training data has over one million rows. I expect there will be challenges in dealing with the large dataset. Challenges may include running into memory errors and excessive processing times.
 
