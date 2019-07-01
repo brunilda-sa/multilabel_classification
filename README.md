@@ -31,7 +31,7 @@ To combat the large size of the dataset, there are several techniques to try, in
 Imbalanced Dataset
 The dataset is highly imbalanced, with only 6% of samples belonging to the target (insincere) class. I anticipate this will cause challenges with recall. Maximizing recall, or true positive rate, could be a difficulty here due to the small number of insincere samples. I anticipate resampling techniques and data augmentation could improve model performance.
 
-# Metric to be used
+## Metric to be used
 Submissions will be evaluated based on their mean (F_{2}) score. The F score, commonly used in information retrieval, measures accuracy using the precision p and recall r. Precision is the ratio of true positives (tp) to all predicted positives (tp + fp). Recall is the ratio of true positives to all actual positives (tp + fn). The (F_{2}) score is given by
 
 (1+β2)prβ2p+r  where  p=tptp+fp,  r=tptp+fn, β=2.
@@ -47,10 +47,10 @@ Support is the number of true results for each class.
 
 Confusion Matrix: A breakdown of predictions into a table showing correct predictions (the diagonal) and the types of incorrect predictions made (what classes incorrect predictions were assigned).
 
-# Handeling the Unbalanced data
+## Handeling the Unbalanced data
 TBD
 
-# Baseline Models
+## Baseline Models
 Gor our analysis we will compare different classifiers and neural networks
 ## Classifiers
   - One versus Rest using Logistic Regression: A linear model for classification. They are fast to train and predict, scale well, and are easy to interpret, and are therefore a good choice for a baseline model
@@ -58,7 +58,7 @@ Gor our analysis we will compare different classifiers and neural networks
   - MLKNN
   - RainForest
   
-# Baseline Test Set Results
+## Baseline Test Set Results
 **Classifiers**
 - OnevsRestClassifier: 
 - KNN       : 
@@ -72,8 +72,8 @@ Gor our analysis we will compare different classifiers and neural networks
 
 From this decrease in F2 score we can assume our models are not generalizing well to the unseen validation data. We definitely have a lot of room for improvement!
 
-# How to improve the performance?
-## options
+## How to improve the performance?
+### options
 There are various techniques involved in improving the performance of imbalanced datasets.
 
 Re-sampling Dataset
@@ -88,5 +88,5 @@ Add bias to classes overrepresented: Since classes are imbalanced, what about pr
 
 ## What was implemented
 TBD
-# Conclusion
+## Conclusion
 TBD
