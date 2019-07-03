@@ -47,6 +47,24 @@ Support is the number of true results for each class.
 
 Confusion Matrix: A breakdown of predictions into a table showing correct predictions (the diagonal) and the types of incorrect predictions made (what classes incorrect predictions were assigned).
 
+Definition of accuracy
+Accuracy is how close a value is to its true value. An example would be how close an arrow gets to the bullseye center.
+
+Definition of Precision
+Precision is how consistent results are when measurements are repeated. Precise values differ from each other because of random error, which is a form of observational error. 
+
+High Recall & Low Precision
+High volume of predictions were TP, but also FN that were detected by the model
+
+Low recall, high precision
+High volume of False negatives and low volume of TP & FP
+
+High recall, high precision
+High voulume of prediction that are TP, low volumen of predictions detected as FP, FN
+
+
+Ressources[https://medium.com/@klintcho/explaining-precision-and-recall-c770eb9c69e9]
+
 ## Handeling the Unbalanced data
 TBD
 
