@@ -1,8 +1,12 @@
 # Multi-label classification for Satellite Images
 
-This project is about labeling satellite images chips with various atmospheric conditions and rare land cover/land use phenomena. This images are segments of a larger image of the Amazon Rainforest
+## Introduction
+This project is about labeling satellite images chips with various atmospheric conditions and rare land cover/land use phenomena. This images are segments of a larger image of the Amazon Rainforest. Each satellite images contains multiple local features and these set of features could form a hierarchy relationship. For example, a cloudy label is classified further into the type of cloud such as partial cloudy or dense cloud. The hierarchical labelling may pose another challenge when we develop a classification model. 
+### Labels description
+- Each image can have multiple labels
+- There are 17 possible tags: agriculture, artisinal_mine, bare_ground, blooming, blow_down, clear, cloudy, conventional_mine, cultivation, habitation, haze, partly_cloudy, primary, road, selective_logging, slash_burn, water
 
-## Data source and description
+### Data source and description
 
 The dataset contains the list of labels and satellite images. Images have four bands of data: red, green, blue, and near infrared
 The data comes from Planet (https://www.planet.com/) and its Brazilian partner SCCON (https://www.sccon.com.br/)
@@ -11,27 +15,18 @@ Data list:
 - tif-v2.tar.7z - tif files for the training/test set
 - [train/test]-jpg[-additional].tar.7z - jpg files for the trainin/test set
 
-```
-Give examples
-```
-## Labels description
+### What is a Multi-Label Classification
+Multi-label classification on satellite images is task of finding multiple key features from a noisy image. Thus, one satellite image can be associated with multiple labels or classes.
 
-- Each image can have multiple labels
-- There are 17 possible tags: agriculture, artisinal_mine, bare_ground, blooming, blow_down, clear, cloudy, conventional_mine, cultivation, habitation, haze, partly_cloudy, primary, road, selective_logging, slash_burn, water
-
-## What is a Multi-Label Classification
+## Challenges
+- Images be classified into several classes, i.e. Multi-Label classfication
+- Noisy images
+- Large Dataset, the training data has over one million rows. 
+- Imbalanced Dataset. The dataset is highly imbalanced, with only TBD% of samples belonging to the lower class.
+## Methodology 
 TBD
 
-## Expected Challenges
-Large Dataset
-The training data has over one million rows. I expect there will be challenges in dealing with the large dataset. Challenges may include running into memory errors and excessive processing times.
-
-To combat the large size of the dataset, there are several techniques to try, including using smaller samples of the data for training and dimensionality reduction. I anticipate feature selection and engineering as well as model optimization will be important.
-
-Imbalanced Dataset
-The dataset is highly imbalanced, with only 6% of samples belonging to the target (insincere) class. I anticipate this will cause challenges with recall. Maximizing recall, or true positive rate, could be a difficulty here due to the small number of insincere samples. I anticipate resampling techniques and data augmentation could improve model performance.
-
-## Metric to be used
+### Metric to be used
 Submissions will be evaluated based on their mean (F_{2}) score. The F score, commonly used in information retrieval, measures accuracy using the precision p and recall r. Precision is the ratio of true positives (tp) to all predicted positives (tp + fp). Recall is the ratio of true positives to all actual positives (tp + fn). The (F_{2}) score is given by
 
 (1+β2)prβ2p+r  where  p=tptp+fp,  r=tptp+fn, β=2.
@@ -65,18 +60,18 @@ High voulume of prediction that are TP, low volumen of predictions detected as F
 
 Ressources[https://medium.com/@klintcho/explaining-precision-and-recall-c770eb9c69e9]
 
-## Handeling the Unbalanced data
-TBD
-
-## Baseline Models
-Gor our analysis we will compare different classifiers and neural networks
-## Classifiers
-  - One versus Rest using Logistic Regression: A linear model for classification. They are fast to train and predict, scale well, and are easy to interpret, and are therefore a good choice for a baseline model
+## Baseline approach
   - KNN
   - MLKNN
   - RainForest
   
-## Baseline Test Set Results
+## Second approach
+- CNN
+
+## Third approach
+- Transfer Learning, MobileNet, VGG16
+
+## Comparison Results
 **Classifiers**
 - OnevsRestClassifier: 
 - KNN       : 
@@ -104,7 +99,5 @@ Feature Engineering
 
 Add bias to classes overrepresented: Since classes are imbalanced, what about providing some bias to minority classes ? We can estimate class weights
 
-## What was implemented
-TBD
 ## Conclusion
 TBD
