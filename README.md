@@ -8,8 +8,10 @@ In order to train our model we are going to use
 The dataset contains the list of labels and satellite images. Images have four bands of data: red, green, blue, and near infrared
 The data comes from Planet (https://www.planet.com/) and its Brazilian partner SCCON (https://www.sccon.com.br/)
 Data list:
-- train.csv - a list of training file names and their labels, the labels are space-delimited
-- [train/test]-jpg - jpg files for the training/test set
+-  train.csv - contains the training file names and their labels, the labels are space-delimited
+-  sample_submission.csv - contains all the files in the test set
+-  train-jpg.zip - images for the train set
+-  test-jpg.zip - images for the test set
 
 ### What is a Multi-Label Classification
 Multi-label classification is task of finding multiple key features from one specific satellite image.
