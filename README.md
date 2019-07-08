@@ -53,7 +53,7 @@ For the second approach, we are going to proceed to a comparison analysis, based
 - VGG16
 
 ## Third approach
-For the Third approach, we are going to proceed to a comparison analysis, based on the F2 score, among the the best classifier and the best neural network.
+For the Third approach, we are going to proceed to a comparison analysis, based on the F2 score, among the all classifiers and all neural network, after been feature engineering our labels.
 
 ## Results
 **Baseline Approach** 
