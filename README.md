@@ -15,8 +15,7 @@ Data list:
 Multi-label classification is task of finding multiple key features from one specific satellite image.
 
 ## Challenges
-- Images be classified into several classes, i.e. Multi-Label classfication
-- Noisy images
+- Multi-Label classification
 - Large Dataset, the training data has over one million rows 
 - Imbalanced Dataset
 
