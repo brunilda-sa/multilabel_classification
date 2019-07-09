@@ -1,24 +1,24 @@
 # Multi-label classification for Satellite Images
 
 ## Introduction
-In this notebook we are going to build a multi-label classification model, where given a specific image the model will associate the labels belonging to it. Thus, each image can have multiple labels and there are 17 possible labels: agriculture, artisinal_mine, bare_ground, blooming, blow_down, clear, cloudy, conventional_mine, cultivation, habitation, haze, partly_cloudy, primary, road, selective_logging, slash_burn, water.
+In this notebook we are going to build a multi-label classification model, where given a specific satellite image the model will associate all labels belonging to it. The labels associated to the satellite images describe differents atmospheric conditions and various classes of land cover/land use. 
+There are 17 possible labels: agriculture, artisinal_mine, bare_ground, blooming, blow_down, clear, cloudy, conventional_mine, cultivation, habitation, haze, partly_cloudy, primary, road, selective_logging, slash_burn, water.
 
 ### Data source and description
-In order to train our model we are going to use 
 The dataset contains the list of labels and satellite images. Images have four bands of data: red, green, blue, and near infrared
 The data comes from Planet (https://www.planet.com/) and its Brazilian partner SCCON (https://www.sccon.com.br/)
 Data list:
 -  train.csv - contains the training file names and their labels, the labels are space-delimited
--  sample_submission.csv - contains all the files in the test set
+-  sample_submission.csv - contains all file names and their labels in the test set
 -  train-jpg.zip - images for the train set
 -  test-jpg.zip - images for the test set
 
 ### What is a Multi-Label Classification
-Multi-label classification is task of finding multiple key features from one specific satellite image.
+Multi-label classification is task of finding multiple key features from one specific satellite image. In others words one image can be associated to several classes/labels.
 
 ## Challenges
-- Multi-Label classification
-- Large Dataset, the training data has over one million rows 
+- Multi-Label classification. Normally classification are bynary or multi-classes.
+- Large dataset, the training data has over one million rows 
 - Imbalanced Dataset
 
 ### Methodology 
@@ -36,7 +36,8 @@ Multi-label classification is task of finding multiple key features from one spe
 -  Score selected classifier using the test data set
 
 ### Metric to be used
-**F2 Score**: When plotting the labels distribution we could observed that we have very unbalance. In this case one the most commonly use metrics is  the F2 score. The Fβ score, measures accuracy using the precision and recall. Precision is the ratio of true positives (tp) to all predicted positives (tp + fp). Recall is the ratio of true positives to all actual positives (tp + fn). The F2 score is given by (1+β2)prβ2p+r  where  p=tptp+fp,  r=tptp+fn, β=2. Note that the F2 score weights recall higher than precision.
+**F2 Score**: When plotting the labels distribution, we could observed that we have very imbalanced data
+. In this case one the most commonly use metrics is  the F2 score. The Fβ score, measures accuracy using the precision and recall. Precision is the ratio of true positives (tp) to all predicted positives (tp + fp). Recall is the ratio of true positives to all actual positives (tp + fn). The F2 score is given by (1+β2)prβ2p+r  where  p=tptp+fp,  r=tptp+fn, β=2. Note that the F2 score weights recall higher than precision.
 
 **Confusion Matrix**: A breakdown of predictions into a table showing correct predictions (the diagonal) and the types of incorrect predictions made (what classes incorrect predictions were assigned).
 
